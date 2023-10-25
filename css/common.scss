@@ -1,0 +1,164 @@
+﻿$color-hover: #007ed9;
+@function ptr($px) {
+  @return ($px * 0.0625) + rem;
+}
+
+@function wImage($height, $width) {
+  @return ($height / $width) * 100%;
+}
+
+@mixin transition {
+  transition: 0.3s all ease-in-out;
+}
+
+@function percent($item, $total: 1320) {
+  @return ($item / $total) * 100%;
+}
+
+%owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: ptr(10);
+  width: 100%;
+
+  .owl-dot {
+    width: ptr(10);
+    height: ptr(10);
+    background: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 ptr(5);
+
+    &.active {
+      background: $color-hover;
+    }
+  }
+}
+
+%owl-nav {
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: ptr(20);
+    height: ptr(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.2);
+    color: #000;
+    border-radius: 0 ptr(5) ptr(5) 0;
+
+    &:before {
+      font-family: "FontAwesome";
+      font-weight: 900;
+      content: "\f053";
+    }
+
+    &.owl-next {
+      left: auto;
+      right: 0;
+      border-radius: ptr(5) 0 0 ptr(5);
+
+      &:before {
+        content: "\f054";
+      }
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+%tabContent {
+  position: relative;
+
+  .tab {
+    &:not(.active) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      z-index: -1;
+      pointer-events: none;
+      width: 100%;
+    }
+  }
+}
+%ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.commonBanner {
+  display: block;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+img {
+  transition: 0.3s all ease-in-out;
+}
+
+.noidung {
+  padding: 0;
+  a {
+    &:hover {
+      color: var(--colorMainHover) !important;
+    }
+  }
+}
+.openSub {
+  display: none;
+}
+.openList {
+  display: none;
+}
+.name {
+  &:hover {
+    color: var(--colorMainHover) !important;
+  }
+}
+.imageRatio {
+  aspect-ratio: var(--ratio);
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+#bttop {
+  position: fixed;
+  right: 0.625rem;
+  bottom: 0.625rem;
+  font-size: 1.5625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #ccc;
+  border-radius: 0.25rem;
+  line-height: 2.5rem;
+  text-align: center;
+  z-index: 10;
+  display: none;
+  transition: none;
+  &:hover {
+    text-decoration: none;
+    background: var(--colorMainHover) !important;
+    color: #fff;
+  }
+}
+
+.openList,
+.openSub,
+.btn_divSearchPage {
+  display: none;
+}
