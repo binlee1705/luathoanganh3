@@ -16,7 +16,7 @@ img {
   padding: 0;
 }
 .noidung a:hover {
-  color: #007ed9 !important;
+  color: var(--colorMainHover) !important;
 }
 
 .openSub {
@@ -28,7 +28,7 @@ img {
 }
 
 .name:hover {
-  color: #007ed9 !important;
+  color: var(--colorMainHover) !important;
 }
 
 .imageRatio {
@@ -56,7 +56,7 @@ img {
 }
 #bttop:hover {
   text-decoration: none;
-  background: #007ed9;
+  background: var(--colorMainHover) !important;
   color: #fff;
 }
 

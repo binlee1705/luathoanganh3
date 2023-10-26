@@ -129,7 +129,7 @@ $(document).ready(() => {
     startVisible: true,
     pauseOnHover: true,
   });
-  $(".commonSlideBanner ").each(function () {
+  $(".commonSlideBanner").each(function () {
     $(this).owlCarousel(
       owlslide(
         $(this).find(">*").length,
@@ -143,6 +143,48 @@ $(document).ready(() => {
       )
     );
   });
+  $("#customerReview .group").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [20, 20, 20, 20, 20, 20],
+        true,
+        true,
+        false,
+        [1, 1, 1, 1, 1],
+        "",
+        ""
+      )
+    );
+  });
+  $("#project .group").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [20, 20, 20, 20, 20, 20],
+        true,
+        true,
+        true,
+        [6, 6, 6, 6, 6],
+        "",
+        ""
+      )
+    );
+  });
+  $("#customer .group").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [20, 20, 20, 20, 20, 20],
+        true,
+        true,
+        true,
+        [6, 6, 6, 6, 6],
+        "",
+        ""
+      )
+    );
+  });
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
@@ -153,7 +195,7 @@ $(window).scroll(function () {
   }
 });
 
-$(window).resize(function () {});
+$(window).resize(function () { });
 
 function preventScroll(e) {
   e.preventDefault();
@@ -171,20 +213,20 @@ function Increasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Decreasenoidung() {
@@ -193,20 +235,20 @@ function Decreasenoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function Resetnoidung() {
@@ -215,20 +257,20 @@ function Resetnoidung() {
   $(".noidung").css(
     "cssText",
     "font-size:" +
-      size +
-      "px !important; line-height:" +
-      lineheight +
-      "px !important"
+    size +
+    "px !important; line-height:" +
+    lineheight +
+    "px !important"
   );
   $(".noidung")
     .find("*")
     .css(
       "cssText",
       "font-size:" +
-        size +
-        "px !important; line-height:" +
-        lineheight +
-        "px !important"
+      size +
+      "px !important; line-height:" +
+      lineheight +
+      "px !important"
     );
 }
 function fullSrceenIframe() {

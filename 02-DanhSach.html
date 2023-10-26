@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trang chủ</title>
+  <meta charset="utf-8" />
+  <meta name="MobileOptimized" content="device-width" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <!--CSS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="bootstrap/bootstrap.css" rel="stylesheet" />
+  <link href="css/animate.css" rel="stylesheet" />
+  <link href="css/font/fontawesome-all.css" rel="stylesheet" />
+  <link href="js/Owl2/owl.carousel.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/css_rwd.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --fontSize: 14px;
+      --lineHeight: 24px;
+      --colorMain: #333;
+      --colorMainHover: #0c86c6;
+      --commonTop_background: #0c86c6;
+      --commonTop_colorText: #fff;
+      --widthWrp: 1200px;
+      --header_background: #f5f5f5;
+
+      --body_background: #fff;
+      --body_maxWidth: 1300px;
+
+      --menuMain_color: #555;
+      --menuMain_hover: #eee;
+      --menuMain_borderColor: #3e59ad;
+
+      --slideBanner_colorDot: #0c86c6;
+
+      --service_background: transparent;
+      --service_titleModule_color: #0c86c6;
+      --service_titleModule_fontSize: 23px;
+      --service_description_fontSize: 19px;
+      --service_item_name_fontSize: 19px;
+      --service_otherName_name_fontSize: 16px;
+
+      --about_right_background: #efeaea;
+      --about_titleModule_fontSize: 26px;
+      --about_description_fontSize: 16px;
+      --about_description_lineheight: 24px;
+
+      --profile_background: transparent;
+      --profile_title_background: url(../pic/bgHSNL.png) center no-repeat;
+      --profile_title_color: rgb(255, 248, 201);
+      --profile_title_fontSize: 36px;
+
+      --whyus_background: #f2f2f2;
+      --whyus_titleModule_color: #0c86c6;
+      --whyus_titleModule_fontSize: 20px;
+      --whyus_desciprtion_fontSize: 18px;
+      --whyus_desciprtion_lineheight: 23px;
+      --whyus_item_icon_background: #0c86c6;
+      --whyus_item_icon_color: #fff;
+      --whyus_item_icon_fontSize: 60px;
+      --whyus_item_name_fontSize: 18px;
+      --whyus_item_cont_fontSize: 16px;
+      --whyus_item_cont_lineHeight: 23px;
+
+      --customerReview_background: url(https://quocluat.vn/photos/background/bg-slider-1.jpg);
+      --customerReview_titleModule_color: #fff;
+      --customerReview_titleModule_fontSize: 20px;
+      --customerReview_description_color: #fff;
+      --customerReview_description_fontSize: 16px;
+      --customerReview_description_lineHeight: 23px;
+      --customerReview_image_width: 120px;
+      --customerReview_content_fontSize: 18px;
+      --customerReview_content_lineHeight: 30px;
+      --customerReview_content_color: #fff;
+      --customerReview_nameCustomer_fontSize: 18px;
+      --customerReview_nameCustomer_color: #fff;
+
+      --procedure_background: transparent;
+      --procedure_titleModule_color: #000;
+      --procedure_titleModule_fontSize: 30px;
+      --procedure_description_fontSize: 18px;
+      --procedure_description_lineHeight: 25px;
+      --procedure_icon_width: 60%;
+      --procedure_icon_background: #0c86c6;
+      --procedure_icon_color: #fff;
+      --procedure_icon_fontSize: 30px;
+      --procedure_step_fontSize: 20px;
+      --procedure_content_fontSize: 16px;
+      --procedure_content_lineHeight: 23px;
+
+      --newsHome_background: #f2f2f2;
+      --newsHome_titleModule_color: #000;
+      --newsHome_titleModule_fontSize: 30px;
+      --newsHome_description_fontSize: 16px;
+      --newsHome_description_lineHeight: 23px;
+      --newsHome_item_name_fontSize: 16px;
+      --newsHome_item_name_lineHeight: 23px;
+
+      --staff_background: transparent;
+      --staff_titleModule_color: #000;
+      --staff_titleModule_fontSize: 30px;
+      --staff_description_fontSize: 16px;
+      --staff_description_lineHeight: 23px;
+      --staff_photo_width: 200px;
+      --staff_name_fontSize: 16px;
+      --staff_name_lineHeight: 23px;
+      --staff_name_color: #000;
+      --staff_position_fontSize: 16px;
+      --staff_position_lineHeight: 23px;
+      --staff_position_color: #000;
+      --staff_hotline_fontSize: 15px;
+      --staff_hotline_lineHeight: 20px;
+      --staff_hotline_color: #0c86c6;
+
+      --project_background: #fff;
+      --project_image_borderColor: #333;
+      --project_name_fontSize: 16px;
+      --project_name_lineHeight: 23px;
+      --project_name_color: #000;
+      --project_typeService_fontSize: 14px;
+      --project_typeService_lineHeight: 18px;
+      --project_typeService_color: #000;
+
+      --customer_background: #fff;
+      --customer_image_borderColor: #333;
+      --customer_titleModule_color: #000;
+      --customer_titleModule_fontSize: 30px;
+      --customer_image_borderColor: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="commonTop">
+    <div class="wrp">
+      <div class="left">
+        <span><i class="fas fa-phone-alt"></i> Tổng đài tư vấn miễn phí: (028) 38
+          20 29 29 (20 line)</span>
+        <span><i class="fal fa-mobile"></i> Hotline: 0948 68 2349 | 0911 53
+          2929</span>
+      </div>
+      <div class="right">
+        <ul class="social">
+          <li>
+            <a href="" title=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="" title=""><i class="fab fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="" title=""><i class="fas fa-map-marker-alt"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header>
+    <div class="wrp">
+      <a href="/" class="logo" title="">
+        <span class="icon">
+          <img src="https://luathoanganh.vn/cong-ty-luat/pic/logo.png" alt="" loading="lazy" />
+        </span>
+      </a>
+      <nav id="menu">
+        <ul class="menuMain">
+          <li><a class="active" href="">Getting started</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Examples</a></li>
+          <li><a href="">Framework</a></li>
+          <li><a href="">Tutorials</a></li>
+          <li><a href="">API</a></li>
+          <li><a href="">Updating</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </nav>
+      <div class="searchForm">
+        <input type="search" placeholder="Nhập từ khóa tìm kiếm..." />
+        <a href="" title="" class="btnSearch"><i class="fal fa-search"></i></a>
+      </div>
+    </div>
+  </header>
+  <div id="container">
+    <div class="colLeft">
+
+    </div>
+    <div class="colRight"></div>
+  </div>
+  <div id="copyright">
+    <div class="wrp">
+      © Bản quyền thuộc về -Luật Hoàng Anh- Mọi sự sao chép phải được sự chấp
+      thuận của Luật Hoàng Anh bằng văn bản.
+    </div>
+  </div>
+  <a href="javascript://" id="bttop">
+    <i class="fad fa-arrow-to-top"></i>
+  </a>
+  <!--JS-->
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="bootstrap/bootstrap.js"></script>
+  <script src="js/Owl2/owl.carousel.min.js"></script>
+  <script src="js/jquery.marquee.min.js"></script>
+  <script src="js/Common.js"></script>
+</body>
+
+</html>
