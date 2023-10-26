@@ -1193,7 +1193,7 @@ span a {
 body {
   background: var(--body_background);
   color: var(--colorMain);
-  font-family: "Roboto", serif;
+  font-family: var(--body_fontfamily);
   min-width: 100%;
   max-width: var(--body_maxWidth);
   min-height: 100vh;
@@ -1920,4 +1920,319 @@ header .wrp .searchForm .btnSearch {
 #customer .wrp .group .owl-nav .owl-next:hover {
   background: var(--colorMainHover);
   color: var(--commonTop_colorText);
+}
+
+#contact {
+  position: relative;
+  padding: 30px 0 40px 0;
+  background: var(--contact_background);
+}
+#contact .wrp {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+}
+#contact .wrp .left {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 25px;
+  background: var(--contact_left_background);
+}
+#contact .wrp .left .title {
+  color: var(--contact_left_title_color);
+  font-size: var(--contact_left_title_fontSize);
+  font-weight: 600;
+  text-align: center;
+  line-height: var(--contact_left_title_lineHeight);
+  text-transform: uppercase;
+}
+#contact .wrp .left .des {
+  color: var(--contact_left_des_color);
+  font-size: var(--contact_left_des_fontSize);
+  text-align: center;
+  line-height: var(--contact_left_des_lineHeight);
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+#contact .wrp .left .form .item {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 7px;
+  outline: none;
+  font-size: 15px;
+}
+#contact .wrp .left .form .btnSubmit {
+  margin-top: 10px;
+  background-color: var(--contact_left_button_background);
+  height: 45px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--contact_left_button_color);
+  font-size: var(--contact_left_button_fontSize);
+  text-align: center;
+  line-height: var(--contact_left_button_lineHeight);
+  cursor: pointer;
+}
+#contact .wrp .left .form .textLast {
+  margin-top: 20px;
+  padding: 0 10px;
+  color: var(--contact_left_textLast_color);
+  font-size: var(--contact_left_textLast_fontSize);
+  text-align: center;
+  line-height: var(--contact_left_textLast_lineHeight);
+}
+#contact .wrp .right {
+  flex: 1;
+  padding-left: 50px;
+}
+#contact .wrp .right .wImage {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#contact .wrp .right .wImage::before {
+  padding-bottom: 49.63%;
+}
+#contact .wrp .right .title {
+  color: var(--contact_right_title_color);
+  font-size: var(--contact_right_title_fontSize);
+  font-weight: bold;
+  letter-spacing: 0px;
+  line-height: var(--contact_right_title_lineHeight);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+#contact .wrp .right .title:after {
+  content: "";
+  width: var(--contact_right_title_border_width);
+  position: absolute;
+  border-bottom: 1px solid var(--contact_right_title_border_color);
+  height: 1px;
+  display: block;
+  bottom: 0;
+  left: 0;
+}
+#contact .wrp .right .des {
+  color: var(--contact_right_des_color);
+  font-size: var(--contact_right_des_fontSize);
+  line-height: var(--contact_right_des_lineHeight);
+}
+
+#footer {
+  background: var(--footer_background);
+  background-size: cover;
+  padding: 25px 0 50px 0;
+}
+#footer .wrp {
+  max-width: 100%;
+  display: flex;
+  color: var(--footer_color);
+}
+#footer .wrp .left {
+  padding-right: 60px;
+  line-height: 30px;
+}
+#footer .wrp .left .logo {
+  display: block;
+  margin-bottom: 15px;
+}
+#footer .wrp .left .border {
+  width: 79px;
+  margin: 20px 0;
+  border-color: var(--footer_color) !important;
+  opacity: 0.3;
+}
+#footer .wrp .left .plug {
+  display: flex;
+  gap: 10px;
+}
+#footer .wrp .left .plug a {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .wrp .left .plug a:hover {
+  background: var(--colorMainHover);
+  border-color: var(--colorMainHover);
+}
+#footer .wrp .right {
+  flex: 1;
+  display: flex;
+  font-size: var(--footer_right_fontSize);
+  color: var(--footer_right_color);
+  line-height: var(--footer_right_lineHeight);
+  padding-top: 20px;
+}
+#footer .wrp .right .group {
+  flex: 1;
+  padding-right: 20px;
+}
+#footer .wrp .right .group .nameCate {
+  font-size: var(--footer_nameCate_fontSize);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 15px;
+  color: var(--footer_nameCate_color);
+  display: block;
+}
+#footer .wrp .right .group .nameCate::after {
+  content: "";
+  width: 79px;
+  height: 1px;
+  background: var(--footer_nameCate_color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#footer .wrp .right .group .nameCate i {
+  display: none;
+}
+#footer .wrp .right .group .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#footer .wrp .right .group .list li {
+  margin-bottom: 5px;
+}
+#footer .wrp .right .group .list li a {
+  display: block;
+}
+#footer .wrp .right .group .list li a:hover {
+  color: var(--colorMainHover);
+}
+
+#copyright {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--copyright_color);
+  background: var(--copyright_background);
+  text-align: center;
+  font-size: var(--copyright_fontSize);
+  line-height: var(--copyright_lineHeight);
+}
+
+#container {
+  display: flex;
+}
+#container #menuCate {
+  width: var(--container_menuCate_width);
+  max-height: 100%;
+  overflow: auto;
+  border-right: 1px solid var(--container_menuCate_borderColor);
+  background: transparent;
+}
+#container #menuCate > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 10px 0;
+}
+#container #menuCate > ul li a,
+#container #menuCate > ul li span {
+  display: block;
+  display: flex;
+  gap: 5px;
+  padding: 5px 0;
+  padding-left: 15px;
+  align-items: baseline;
+  font-size: var(--container_menuCate_fontSize);
+  line-height: var(--container_menuCate_lineHeight);
+  cursor: pointer;
+}
+#container #menuCate > ul li a:hover, #container #menuCate > ul li a.active,
+#container #menuCate > ul li span:hover,
+#container #menuCate > ul li span.active {
+  background: var(--container_menuCate_active_background);
+  color: var(--container_menuCate_active_color);
+}
+#container #menuCate > ul li a:hover {
+  text-decoration: underline;
+}
+#container #menuCate > ul li ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#container #menuCate > ul li ul li a,
+#container #menuCate > ul li ul li span {
+  padding-left: 35px;
+}
+#container #menuCate > ul li ul li ul li a,
+#container #menuCate > ul li ul li ul li span {
+  padding-left: 55px;
+}
+#container #menuCate > ul li.active > ul {
+  display: block;
+}
+#container .colRight {
+  scroll-behavior: smooth;
+  padding: 40px 0;
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  max-height: 100%;
+}
+#container .colRight .title {
+  font-weight: 500;
+  font-size: var(--container_tableOfContents_title_fontSize);
+  line-height: var(--container_tableOfContents_title_lineHeight);
+  color: var(--container_tableOfContents_title_color);
+}
+#container .colRight #tableOfContents {
+  width: 350px;
+  position: sticky;
+  top: 0;
+}
+#container .colRight #tableOfContents .list_tableOfContents {
+  border-left: 1px solid #f5f5f5;
+  padding: 0 40px 0 20px;
+  margin-top: 10px;
+}
+#container .colRight #tableOfContents .list_tableOfContents ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#container .colRight #tableOfContents .list_tableOfContents ul li a {
+  color: var(--container_tableOfContents_list_text_color);
+  font-size: var(--container_tableOfContents_list_text_fontSize);
+  line-height: var(--container_tableOfContents_list_text_lineHeight);
+  display: block;
+}
+#container .colRight #tableOfContents .list_tableOfContents ul li a:hover, #container .colRight #tableOfContents .list_tableOfContents ul li a.active {
+  color: var(--colorMainHover);
+}
+#container .colRight .boundContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#container .colRight .boundContent .contentMain {
+  width: 760px;
+}
+#container .colRight .boundContent .contentMain .titleContent {
+  font-size: var(--container_contentMain_titleContent_fontSize);
+  line-height: var(--container_contentMain_titleContent_lineHeight);
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--container_contentMain_titleContent_color);
 }/*# sourceMappingURL=style.css.map */
