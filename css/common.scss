@@ -162,3 +162,56 @@ img {
 .btn_divSearchPage {
   display: none;
 }
+%menuCate_ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 10px 0;
+  li {
+    a,
+    span {
+      display: block;
+      display: flex;
+      gap: 5px;
+      padding: 5px 0;
+      padding-left: 15px;
+      align-items: baseline;
+      font-size: var(--container_menuCate_fontSize);
+      line-height: var(--container_menuCate_lineHeight);
+      cursor: pointer;
+      &:hover,
+      &.active {
+        background: var(--container_menuCate_active_background);
+        color: var(--container_menuCate_active_color);
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a,
+        span {
+          padding-left: 35px;
+        }
+        ul {
+          li {
+            a,
+            span {
+              padding-left: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+  li.active {
+    > ul {
+      display: block;
+    }
+  }
+}

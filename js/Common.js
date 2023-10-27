@@ -165,7 +165,7 @@ $(document).ready(() => {
         true,
         true,
         true,
-        [6, 6, 6, 6, 6],
+        [6, 5, 4, 4, 2],
         "",
         ""
       )
@@ -179,12 +179,41 @@ $(document).ready(() => {
         true,
         true,
         true,
-        [6, 6, 6, 6, 6],
+        [6, 5, 4, 4, 2],
         "",
         ""
       )
     );
   });
+  $("#legalService .parent").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [30, 30, 30, 30, 30, 30],
+        true,
+        true,
+        true,
+        [2, 2, 2, 2, 1],
+        "",
+        "",
+        false,
+        15000
+      )
+    );
+  });
+  $("#footer .right .group .nameCate i").click(function () {
+    $(this).parent().next(".list").slideToggle();
+    $(this).toggleClass("active");
+  });
+  $("#menuCate ul li >span,#menu .menuMain ul li >span").click(function () {
+    $(this).parent("li").toggleClass("active");
+  });
+
+  if ($(window).width() <= 1199) {
+    $("#tableOfContents .title").click(function () {
+      $(this).next(".list_tableOfContents").slideToggle();
+    })
+  }
 });
 $(window).scroll(function () {
   var scrollTop = $(window).scrollTop();
