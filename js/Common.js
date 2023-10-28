@@ -201,6 +201,22 @@ $(document).ready(() => {
       )
     );
   });
+  $("#otherNews .group").each(function () {
+    $(this).owlCarousel(
+      owlslide(
+        $(this).find(">*").length,
+        [20, 20, 20, 20, 20, 20],
+        true,
+        false,
+        true,
+        [3, 3, 3, 3, 2],
+        "",
+        "",
+        false,
+        15000
+      )
+    );
+  });
   $("#footer .right .group .nameCate i").click(function () {
     $(this).parent().next(".list").slideToggle();
     $(this).toggleClass("active");
@@ -208,6 +224,7 @@ $(document).ready(() => {
   $("#menuCate ul li >span,#menu .menuMain ul li >span").click(function () {
     $(this).parent("li").toggleClass("active");
   });
+
 
   if ($(window).width() <= 1199) {
     $("#tableOfContents .title").click(function () {

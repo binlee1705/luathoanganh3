@@ -160,7 +160,7 @@
   --copyright_fontSize: 14px;
   --copyright_lineHeight: 20px;
 
-  --container_menuCate_width: 340px;
+  --container_menuCate_width: 20%;
   --container_menuCate_background: transparent;
   --container_menuCate_borderColor: #f5f5f5;
   --container_menuCate_fontSize: 14px;
@@ -191,4 +191,13 @@
   --legalService_arrow_hover_color: #0c86c6;
   --legalService_dot_color: #333;
   --legalService_dot_active_color: #0c86c6;
+
+  --otherNews_title_color: #333;
+  --otherNews_title_fontSize: 25px;
+  --otherNews_title_lineHeight: 31px;
+  --otherNews_title_borderColor: #666666;
+
+  --otherNews_item_name_color: #333;
+  --otherNews_item_name_fontSize: 14px;
+  --otherNews_item_name_lineHeight: 20px;
 }

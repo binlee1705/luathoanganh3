@@ -251,6 +251,7 @@
         width: 100%;
         .contentMain {
           width: 100%;
+          padding: 0;
         }
       }
       #tableOfContents {
@@ -673,6 +674,15 @@
     .owl-dots {
       bottom: 10px;
     }
+  }
+  #legalService .title > a,
+  #otherNews .title > a {
+    padding: 0 20px;
+  }
+  #container .colRight .boundContent .contentMain .titleContent {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 

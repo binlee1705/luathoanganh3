@@ -298,6 +298,7 @@ img {
   }
   #container .colRight .boundContent .contentMain {
     width: 100%;
+    padding: 0;
   }
   #container .colRight #tableOfContents {
     padding: 10px;
@@ -606,6 +607,15 @@ img {
   }
   #slideBanner .owl-dots {
     bottom: 10px;
+  }
+  #legalService .title > a,
+  #otherNews .title > a {
+    padding: 0 20px;
+  }
+  #container .colRight .boundContent .contentMain .titleContent {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 320px) {

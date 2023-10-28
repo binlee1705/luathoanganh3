@@ -18,8 +18,9 @@
   background: #007ed9;
 }
 
-#legalService .parent .owl-nav .owl-prev, #customer .wrp .group .owl-nav .owl-prev, #project .wrp .group .owl-nav .owl-prev,
+#legalService .parent .owl-nav .owl-prev, #otherNews .group .owl-nav .owl-prev, #customer .wrp .group .owl-nav .owl-prev, #project .wrp .group .owl-nav .owl-prev,
 #legalService .parent .owl-nav .owl-next,
+#otherNews .group .owl-nav .owl-next,
 #customer .wrp .group .owl-nav .owl-next,
 #project .wrp .group .owl-nav .owl-next {
   position: absolute;
@@ -36,8 +37,9 @@
   color: #000;
   border-radius: 0 0.3125rem 0.3125rem 0;
 }
-#legalService .parent .owl-nav .owl-prev:before, #customer .wrp .group .owl-nav .owl-prev:before, #project .wrp .group .owl-nav .owl-prev:before,
+#legalService .parent .owl-nav .owl-prev:before, #otherNews .group .owl-nav .owl-prev:before, #customer .wrp .group .owl-nav .owl-prev:before, #project .wrp .group .owl-nav .owl-prev:before,
 #legalService .parent .owl-nav .owl-next:before,
+#otherNews .group .owl-nav .owl-next:before,
 #customer .wrp .group .owl-nav .owl-next:before,
 #project .wrp .group .owl-nav .owl-next:before {
   font-family: "FontAwesome";
@@ -45,6 +47,7 @@
   content: "\f053";
 }
 #legalService .parent .owl-nav .owl-next.owl-next,
+#otherNews .group .owl-nav .owl-next.owl-next,
 #customer .wrp .group .owl-nav .owl-next.owl-next,
 #project .wrp .group .owl-nav .owl-next.owl-next {
   left: auto;
@@ -52,12 +55,14 @@
   border-radius: 0.3125rem 0 0 0.3125rem;
 }
 #legalService .parent .owl-nav .owl-next.owl-next:before,
+#otherNews .group .owl-nav .owl-next.owl-next:before,
 #customer .wrp .group .owl-nav .owl-next.owl-next:before,
 #project .wrp .group .owl-nav .owl-next.owl-next:before {
   content: "\f054";
 }
-#legalService .parent .owl-nav .owl-prev:hover, #customer .wrp .group .owl-nav .owl-prev:hover, #project .wrp .group .owl-nav .owl-prev:hover,
+#legalService .parent .owl-nav .owl-prev:hover, #otherNews .group .owl-nav .owl-prev:hover, #customer .wrp .group .owl-nav .owl-prev:hover, #project .wrp .group .owl-nav .owl-prev:hover,
 #legalService .parent .owl-nav .owl-next:hover,
+#otherNews .group .owl-nav .owl-next:hover,
 #customer .wrp .group .owl-nav .owl-next:hover,
 #project .wrp .group .owl-nav .owl-next:hover {
   background: rgb(255, 255, 255);
@@ -2234,7 +2239,9 @@ header .wrp .searchForm .btnSearch {
   justify-content: center;
 }
 #container .colRight .boundContent .contentMain {
-  width: 760px;
+  width: 800px;
+  max-width: 100%;
+  padding: 0 20px;
 }
 #container .colRight .boundContent .contentMain .titleContent {
   font-size: var(--container_contentMain_titleContent_fontSize);
@@ -2244,6 +2251,40 @@ header .wrp .searchForm .btnSearch {
   color: var(--container_contentMain_titleContent_color);
 }
 
+#otherNews {
+  margin: 20px 0;
+}
+#otherNews .title {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--otherNews_title_borderColor);
+  display: block;
+}
+#otherNews .title > a {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  display: block;
+  color: var(--otherNews_title_color);
+  background: var(--body_background);
+  padding: 0 50px;
+  font-size: var(--otherNews_title_fontSize);
+  line-height: var(--otherNews_title_lineHeight);
+}
+#otherNews .group {
+  padding-top: 30px;
+}
+#otherNews .group .item .name {
+  display: block;
+  margin-top: 7px;
+  font-weight: 600;
+  font-size: var(--otherNews_item_name_fontSize);
+  line-height: var(--otherNews_item_name_lineHeight);
+  color: var(--otherNews_item_name_color);
+}
 #legalService {
   padding: 40px 0;
 }
@@ -2258,10 +2299,11 @@ header .wrp .searchForm .btnSearch {
   position: absolute;
   bottom: -8px;
   left: 50%;
+  color: var(--legalService_item_color);
   transform: translateX(-50%);
   white-space: nowrap;
   display: block;
-  background: var(--legalService_title_color);
+  background: var(--body_background);
   padding: 0 50px;
   font-size: var(--legalService_title_fontSize);
   line-height: var(--legalService_title_lineHeight);
