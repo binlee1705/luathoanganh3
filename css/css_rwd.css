@@ -488,6 +488,9 @@ img {
   #profile .content .wrp .name {
     font-size: 25px;
   }
+  #container {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 479px) {
   #newsHome .wrp .group .item {
